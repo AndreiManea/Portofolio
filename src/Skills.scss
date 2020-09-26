@@ -1,0 +1,28 @@
+.skills {
+  height: 80vh;
+  background-color: #232323;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 150px;
+  .info {
+    padding-top: 75px;
+    &__title {
+      color: #08fdd8;
+      font-weight: 500;
+      text-align: center;
+      font-size: 48px;
+      letter-spacing: 15px;
+    }
+    &__description {
+      color: white;
+      font-weight: 300;
+      line-height: 50px;
+      font-size: 28px;
+      max-width: 500px;
+      margin-top: 45px;
+      &:last-child {
+        margin-top: 50px;
+      }
+    }
+  }
+}
