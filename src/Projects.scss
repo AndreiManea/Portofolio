@@ -1,0 +1,15 @@
+.projects {
+  background-color: #232323;
+  &__title {
+    color: #08fdd8;
+    text-align: center;
+    font-size: 39px;
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+  .container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 20.3%;
+  }
+}
