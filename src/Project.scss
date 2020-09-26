@@ -16,7 +16,7 @@
       margin-right: 60px;
     }
   }
-  .imageContainer {
+  .image-container {
     position: relative;
     &__image {
       height: 280px;
@@ -48,7 +48,7 @@
         }
         &__title {
           letter-spacing: 3px;
-          &--github {
+          &-github {
             margin-top: 5px;
           }
         }

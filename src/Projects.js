@@ -4,7 +4,7 @@ import "./Projects.scss";
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1 className="projects__title">PROJECTS</h1>
       <div className="container">
         <Project title="Amazon Clone" image="Amazon" />

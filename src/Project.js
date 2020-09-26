@@ -9,16 +9,16 @@ function Project({ image, title, align }) {
       {align ? (
         <div className="project project--right">
           <h2 className="project__title project__title--right">{title}</h2>
-          <div className="imageContainer">
+          <div className="image-container">
             <img
               src={require(`./assets/Images/${image}.png`)}
               alt=""
-              className="imageContainer__image"
+              className="image-container__image"
             />
-            <div className="imageContainer__info">
+            <div className="image-container__info">
               <a href="#" className="icon">
                 <GitHubIcon />
-                <h3 className="icon__title icon__title--github">GitHub</h3>
+                <h3 className="icon__title icon__title-github">GitHub</h3>
               </a>
               <a href="#" className="icon">
                 <LanguageIcon />
@@ -29,16 +29,16 @@ function Project({ image, title, align }) {
         </div>
       ) : (
         <div className="project">
-          <div className="imageContainer">
+          <div className="image-container">
             <img
               src={require(`./assets/Images/${image}.png`)}
               alt=""
-              className="imageContainer__image"
+              className="image-container__image"
             />
-            <div className="imageContainer__info">
+            <div className="image-container__info">
               <a href="#" className="icon">
                 <GitHubIcon />
-                <h3 className="icon__title icon__title--github">GitHub</h3>
+                <h3 className="icon__title icon__title-github">GitHub</h3>
               </a>
               <a href="#" className="icon">
                 <LanguageIcon />
