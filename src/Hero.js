@@ -125,27 +125,48 @@ function Hero() {
           </h3>
         </div>
         <div className="portofolio">
-          <a
-            href="#projects"
-            className="portofolio__link"
+          <div
+            className="portofolio__link-wrapper"
             ref={(el) => (portofolioLink = el)}
           >
-            <span>See My Portofolio </span>
-            <ArrowForwardIcon />
-          </a>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="portofolio__link"
+            >
+              <span>See My Portofolio </span>
+              <ArrowForwardIcon />
+            </Link>
+          </div>
+
           <div className="portofolio__images">
-            <a href="#projects">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
               <img
                 src={require("./assets/Images/Pizza Noastra.png")}
                 ref={(el) => (portofolioImage1 = el)}
               />
-            </a>
-            <a href="#projects">
+            </Link>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
               <img
                 src={require("./assets/Images/COVID19 Tracker.png")}
                 ref={(el) => (portofolioImage2 = el)}
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

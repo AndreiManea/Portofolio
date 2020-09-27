@@ -72,8 +72,10 @@
     }
 
     .portofolio {
-      &__link {
+      &__link-wrapper {
         opacity: 0;
+      }
+      &__link {
         display: flex;
         align-items: center;
         font-size: 18px;
@@ -81,6 +83,7 @@
         transition: 0.3s color;
         &:hover {
           color: #06ccae;
+          cursor: pointer;
         }
         span {
           margin-right: 5px;
@@ -98,6 +101,7 @@
           transition: 0.3s opacity;
           &:hover {
             opacity: 1 !important;
+            cursor: pointer;
           }
         }
       }
