@@ -3,7 +3,7 @@ import "./Project.scss";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
 
-function Project({ image, title, align }) {
+function Project({ image, title, align, github, website }) {
   return (
     <div>
       {align ? (
@@ -16,11 +16,11 @@ function Project({ image, title, align }) {
               className="image-container__image"
             />
             <div className="image-container__info">
-              <a href="#" className="icon">
+              <a href={github} className="icon" target="_blank">
                 <GitHubIcon />
                 <h3 className="icon__title icon__title-github">GitHub</h3>
               </a>
-              <a href="#" className="icon">
+              <a href={website} className="icon" target="_blank">
                 <LanguageIcon />
                 <h3 className="icon__title">Website</h3>
               </a>
@@ -36,11 +36,11 @@ function Project({ image, title, align }) {
               className="image-container__image"
             />
             <div className="image-container__info">
-              <a href="#" className="icon">
+              <a href={github} className="icon" target="_blank">
                 <GitHubIcon />
                 <h3 className="icon__title icon__title-github">GitHub</h3>
               </a>
-              <a href="#" className="icon">
+              <a href={website} className="icon" target="_blank">
                 <LanguageIcon />
                 <h3 className="icon__title">Website</h3>
               </a>

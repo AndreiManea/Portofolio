@@ -20,6 +20,7 @@
       transition: 0.3s color;
       &:hover {
         color: #08fdd8;
+        cursor: pointer;
       }
     }
   }
@@ -58,11 +59,13 @@
       .banner__title {
         font-family: "Krona One", sans-serif;
         font-size: 57px;
+        opacity: 0;
         margin-bottom: 10px;
         letter-spacing: 3px;
       }
       .banner__description {
         font-size: 22px;
+        opacity: 0;
         font-weight: 300;
         letter-spacing: 3px;
       }
@@ -70,6 +73,7 @@
 
     .portofolio {
       &__link {
+        opacity: 0;
         display: flex;
         align-items: center;
         font-size: 18px;
@@ -86,13 +90,14 @@
         margin-top: 25px;
 
         img {
-          opacity: 0.5;
+          opacity: 0;
           width: 242px;
+          object-fit: cover;
           height: 166px;
           margin-right: 25px;
           transition: 0.3s opacity;
           &:hover {
-            opacity: 1;
+            opacity: 1 !important;
           }
         }
       }
