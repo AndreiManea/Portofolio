@@ -50,12 +50,31 @@
           outline: 1px solid #08fdd8;
         }
       }
+      &__container {
+        display: flex;
+      }
+      &__control {
+        display: inline-block;
+        width: calc(45% + 12.5px);
+        &--email {
+          margin-left: 10px;
+        }
+      }
+      &__error {
+        opacity: 0;
+        margin-top: 10px;
+
+        &--show {
+          margin-top: 10px;
+          opacity: 1;
+          color: #08fdd8;
+        }
+      }
       &__name,
       &__email {
-        width: calc(45% - 10px);
+        width: calc(100% - 21px);
       }
       &__email {
-        margin-left: 10px;
         padding-left: 10px;
       }
       &__subject {

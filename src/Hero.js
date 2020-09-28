@@ -8,34 +8,36 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import "./Hero.scss";
 
 function Hero() {
-  let title = useRef(null);
-  let description = useRef(null);
-  let portofolioLink = useRef(null);
-  let portofolioImage1 = useRef(null);
-  let portofolioImage2 = useRef(null);
+  let animate = {
+    title: useRef(null),
+    description: useRef(null),
+    portofolioLink: useRef(null),
+    portofolioImage1: useRef(null),
+    portofolioImage2: useRef(null),
+  };
 
   useEffect(() => {
-    TweenMax.to(title, 1, {
+    TweenMax.to(animate.title, 1, {
       opacity: 1,
       delay: 0.5,
       ease: Power3.easeOut,
     });
-    TweenMax.to(description, 1, {
+    TweenMax.to(animate.description, 1, {
       opacity: 1,
       delay: 0.8,
       ease: Power3.easeOut,
     });
-    TweenMax.to(portofolioLink, 1, {
+    TweenMax.to(animate.portofolioLink, 1, {
       opacity: 1,
       delay: 1.1,
       ease: Power3.easeOut,
     });
-    TweenMax.to(portofolioImage1, 1, {
+    TweenMax.to(animate.portofolioImage1, 1, {
       opacity: 0.5,
       delay: 1.4,
       ease: Power3.easeOut,
     });
-    TweenMax.to(portofolioImage2, 1, {
+    TweenMax.to(animate.portofolioImage2, 1, {
       opacity: 0.5,
       delay: 1.7,
       ease: Power3.easeOut,
@@ -117,17 +119,20 @@ function Hero() {
       </div>
       <div className="hero__center">
         <div className="banner">
-          <h1 className="banner__title" ref={(el) => (title = el)}>
+          <h1 className="banner__title" ref={(el) => (animate.title = el)}>
             ANDREI MANEA
           </h1>
-          <h3 className="banner__description" ref={(el) => (description = el)}>
+          <h3
+            className="banner__description"
+            ref={(el) => (animate.description = el)}
+          >
             FULL-STACK DEVELOPER
           </h3>
         </div>
         <div className="portofolio">
           <div
             className="portofolio__link-wrapper"
-            ref={(el) => (portofolioLink = el)}
+            ref={(el) => (animate.portofolioLink = el)}
           >
             <Link
               to="projects"
@@ -152,7 +157,7 @@ function Hero() {
             >
               <img
                 src={require("./assets/Images/Pizza Noastra.png")}
-                ref={(el) => (portofolioImage1 = el)}
+                ref={(el) => (animate.portofolioImage1 = el)}
               />
             </Link>
             <Link
@@ -164,7 +169,7 @@ function Hero() {
             >
               <img
                 src={require("./assets/Images/COVID19 Tracker.png")}
-                ref={(el) => (portofolioImage2 = el)}
+                ref={(el) => (animate.portofolioImage2 = el)}
               />
             </Link>
           </div>
