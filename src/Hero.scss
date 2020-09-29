@@ -56,14 +56,14 @@
     height: 70vh;
     .banner {
       margin-bottom: 65px;
-      .banner__title {
+      &__title {
         font-family: "Krona One", sans-serif;
         font-size: 57px;
         opacity: 0;
         margin-bottom: 10px;
         letter-spacing: 3px;
       }
-      .banner__description {
+      &__description {
         font-size: 22px;
         opacity: 0;
         font-weight: 300;
@@ -103,6 +103,122 @@
             opacity: 1 !important;
             cursor: pointer;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .hero {
+    background-size: 85%;
+    .navbar {
+      margin-right: 5%;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hero {
+    background-size: 100%;
+    &__center {
+      height: 60vh;
+      .banner {
+        &__title {
+          font-size: 47px;
+        }
+        &__description {
+          font-size: 20px;
+        }
+      }
+      .portofolio {
+        &__link {
+          font-size: 17px;
+        }
+        &__images {
+          img {
+            height: 156px;
+            width: 222px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .hero {
+    background-size: 85%;
+    .navbar {
+      max-width: 500px;
+      &__link {
+        font-size: 13px;
+      }
+    }
+    &__center {
+      height: 65vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero {
+    background-size: 90%;
+    &__center {
+      height: 65vh;
+      .banner {
+        &__title {
+          font-size: 44px;
+        }
+        &__description {
+          font-size: 19px;
+        }
+      }
+      .portofolio {
+        &__link {
+          font-size: 16px;
+        }
+      }
+    }
+    .sidebar {
+      top: 35%;
+      &__link {
+        .MuiSvgIcon-root {
+          width: 39px;
+          height: 39px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-size: 95%;
+    .sidebar {
+      &__link {
+        .MuiSvgIcon-root {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+    .banner {
+      &__title {
+        font-size: 38px;
+      }
+      &__description {
+        font-size: 15px;
+      }
+    }
+    .portofolio {
+      &__link {
+        font-size: 13px;
+      }
+      &__images {
+        img {
+          height: 136px;
+          width: 182px;
         }
       }
     }
