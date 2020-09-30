@@ -33,12 +33,12 @@ function Hero() {
       ease: Power3.easeOut,
     });
     TweenMax.to(animate.portofolioImage1, 1, {
-      opacity: 0.5,
+      opacity: 0.75,
       delay: 1.4,
       ease: Power3.easeOut,
     });
     TweenMax.to(animate.portofolioImage2, 1, {
-      opacity: 0.5,
+      opacity: 0.75,
       delay: 1.7,
       ease: Power3.easeOut,
     });
@@ -61,7 +61,7 @@ function Hero() {
           to="experience"
           spy={true}
           smooth={true}
-          offset={-125}
+          offset={window.innerWidth > 768 ? -125 : 0}
           duration={500}
           className="navbar__link"
         >
@@ -71,7 +71,7 @@ function Hero() {
           to="projects"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={window.innerWidth > 768 ? -100 : 0}
           duration={500}
           className="navbar__link"
         >

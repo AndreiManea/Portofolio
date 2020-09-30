@@ -56,3 +56,25 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .experience {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 90px;
+    align-items: center;
+    height: auto;
+    &__title {
+      transform: none;
+      margin-bottom: 50px;
+      top: 0;
+      left: 0;
+      letter-spacing: 7px;
+      text-align: center;
+      position: relative;
+    }
+    &__image {
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.scss";
 import { useFormik } from "formik";
 import emailjs from "emailjs-com";
@@ -57,10 +57,6 @@ function Contact() {
   const serviceId = "service_997d53r";
   const templateId = "template_hcdo0oe";
   const userId = "user_yKAWvujYWjBNocDgFstNW";
-
-  const onSubmitHandler = (e) => {
-    e.preventDefault();
-  };
 
   return (
     <div className="contact">
@@ -168,11 +164,9 @@ function Contact() {
           {messageSent}
         </form>
       </div>
-      <img
-        src={require("./assets/Images/Contact.svg")}
-        alt=""
-        className="contact__image"
-      />
+      <div className="contact__image--wrapper">
+        <div alt="" className="contact__image"></div>
+      </div>
     </div>
   );
 }

@@ -5,10 +5,23 @@ import LanguageIcon from "@material-ui/icons/Language";
 
 function Project({ image, title, align, github, website }) {
   return (
-    <div>
+    <div className="projectWrapper">
       {align ? (
         <div className="project project--right">
-          <h2 className="project__title project__title--right">{title}</h2>
+          <div className="project__container">
+            <h2 className="project__title project__title--right">{title}</h2>
+            <div className="project__buttons">
+              <a href={github} className="project__button" target="_blank">
+                <GitHubIcon />
+                GitHub
+              </a>
+              <a href={website} className="project__button" target="_blank">
+                <LanguageIcon />
+                Website
+              </a>
+            </div>
+          </div>
+
           <div className="image-container">
             <img
               src={require(`./assets/Images/${image}.png`)}
@@ -46,7 +59,20 @@ function Project({ image, title, align, github, website }) {
               </a>
             </div>
           </div>
-          <h2 className="project__title">{title}</h2>
+
+          <div className="project__container">
+            <h2 className="project__title">{title}</h2>
+            <div className="project__buttons">
+              <a href={github} className="project__button" target="_blank">
+                <GitHubIcon />
+                GitHub
+              </a>
+              <a href={website} className="project__button" target="_blank">
+                <LanguageIcon />
+                Website
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </div>
