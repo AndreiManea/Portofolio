@@ -107,3 +107,38 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .skills {
+    height: auto;
+    padding-top: 90px;
+    &__image {
+      width: 300px;
+      height: 300px;
+    }
+    .info {
+      padding-top: 0;
+
+      padding-right: 25px;
+      &__title {
+        margin-top: 20px;
+
+        font-size: 23px;
+      }
+      &__description {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills {
+    .info {
+      &__description {
+        font-size: 17px;
+      }
+    }
+  }
+}

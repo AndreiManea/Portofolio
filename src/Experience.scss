@@ -78,3 +78,44 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .experience {
+    &__title {
+      font-size: 23px;
+      margin-bottom: 30px;
+    }
+    &__image {
+      height: 350px;
+      width: 420px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .experience {
+    &__image {
+      height: 330px;
+      width: 370px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .experience {
+    &__image {
+      height: 300px;
+      width: 320px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .experience {
+    &__image {
+      padding-right: 10px;
+      height: 280px;
+      width: 300px;
+    }
+  }
+}

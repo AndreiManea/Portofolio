@@ -61,7 +61,7 @@ function Hero() {
           to="experience"
           spy={true}
           smooth={true}
-          offset={window.innerWidth > 768 ? -125 : 0}
+          offset={window.innerWidth > 768 ? -140 : 0}
           duration={500}
           className="navbar__link"
         >

@@ -210,3 +210,72 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .about {
+    .container {
+      &__left {
+        .image {
+          width: 300px;
+          height: 300px;
+          &__background {
+            width: 351px;
+            height: 276px;
+          }
+        }
+      }
+      &__right {
+        .information {
+          &__section {
+            font-size: 21px;
+          }
+          &__title {
+            font-size: 23px;
+          }
+          &__description {
+            font-size: 16px;
+          }
+          &__CV {
+            font-size: 16px;
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    .container {
+      &__left {
+        .image {
+          height: 280px;
+          width: 280px;
+          &__background {
+            width: 331px;
+            height: 256px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about {
+    .container {
+      &__left {
+        .image {
+          height: 250px;
+          width: 250px;
+          &__background {
+            width: 281px;
+            height: 226px;
+            left: -28px;
+          }
+        }
+      }
+    }
+  }
+}

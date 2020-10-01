@@ -157,3 +157,47 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .projectWrapper {
+    padding-bottom: 75px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .project {
+      margin-top: 0;
+      &__title {
+        font-size: 21px;
+      }
+      &__buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      &__button {
+        margin-top: 20px;
+        font-size: 16px;
+        &:first-child {
+          margin-top: 0;
+        }
+        .MuiSvgIcon-root {
+          font-size: 20px;
+        }
+      }
+      .image-container {
+        width: 315px;
+        height: 170px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projectWrapper {
+    .project {
+      .image-container {
+        width: 285px;
+        height: 140px;
+      }
+    }
+  }
+}

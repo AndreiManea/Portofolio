@@ -54,3 +54,12 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .projects {
+    &__title {
+      font-size: 23px;
+      margin-bottom: 30px;
+    }
+  }
+}

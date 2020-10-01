@@ -14,10 +14,14 @@ function Contact() {
       message: "",
     },
     onSubmit: (values) => {
-      setMessageSent(<p className="form__message-sent">Message Sent</p>);
+      setMessageSent(
+        <p className="form__message-sent">
+          Message Sent, thank you for your interest :)
+        </p>
+      );
       setTimeout(() => {
         setMessageSent(null);
-      }, 1000);
+      }, 1500);
       emailjs.send(serviceId, templateId, values, userId).then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
