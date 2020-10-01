@@ -227,8 +227,12 @@
 
 @media screen and (max-width: 768px) {
   .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url("./assets/Images/heroImg.png");
     background-size: auto;
     background-position: 92.5% 100%;
+    background-repeat: no-repeat;
+
     .navbar,
     .sidebar {
       display: none;

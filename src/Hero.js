@@ -106,7 +106,11 @@ function Hero() {
         >
           <GitHubIcon />
         </a>
-        <a className="sidebar__link" href="#" target="_blank">
+        <a
+          className="sidebar__link"
+          href="https://www.instagram.com/andrei.codes/"
+          target="_blank"
+        >
           <InstagramIcon />
         </a>
         <a
