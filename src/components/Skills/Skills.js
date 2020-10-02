@@ -4,7 +4,7 @@ function Skills() {
   return (
     <div className="skills" id="skills">
       <img
-        src={require("./assets/Images/Skills.svg")}
+        src={require("../../assets/Images/Skills.svg")}
         alt=""
         className="skills__image"
       />

@@ -24,7 +24,7 @@ function Project({ image, title, align, github, website }) {
 
           <div className="image-container">
             <img
-              src={require(`./assets/Images/${image}.png`)}
+              src={require(`../../../assets/Images/${image}.png`)}
               alt=""
               className="image-container__image"
             />
@@ -44,7 +44,7 @@ function Project({ image, title, align, github, website }) {
         <div className="project">
           <div className="image-container">
             <img
-              src={require(`./assets/Images/${image}.png`)}
+              src={require(`../../../assets/Images/${image}.png`)}
               alt=""
               className="image-container__image"
             />

@@ -160,7 +160,7 @@ function Hero() {
               duration={500}
             >
               <img
-                src={require("./assets/Images/Pizza Noastra.png")}
+                src={require("../../assets/Images/Pizza Noastra.png")}
                 ref={(el) => (animate.portofolioImage1 = el)}
               />
             </Link>
@@ -172,7 +172,7 @@ function Hero() {
               duration={500}
             >
               <img
-                src={require("./assets/Images/COVID19 Tracker.png")}
+                src={require("../../assets/Images/COVID19 Tracker.png")}
                 ref={(el) => (animate.portofolioImage2 = el)}
               />
             </Link>

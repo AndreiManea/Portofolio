@@ -6,7 +6,7 @@ function Experience() {
       <h1 className="experience__title">EXPERIENCE</h1>
 
       <img
-        src={require("./assets/Images/Experience.svg")}
+        src={require("../../assets/Images/Experience.svg")}
         alt=""
         className="experience__image"
       />

@@ -4,7 +4,7 @@
   height: 100vh;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("./assets/Images/heroImg.png");
+    url("../../assets/Images/heroImg.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
 
@@ -228,7 +228,7 @@
 @media screen and (max-width: 768px) {
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url("./assets/Images/heroImg.png");
+      url("../../assets/Images/heroImg.png");
     background-size: auto;
     background-position: 92.5% 100%;
     background-repeat: no-repeat;
