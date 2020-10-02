@@ -1,10 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Contact.scss";
 import { useFormik } from "formik";
 import emailjs from "emailjs-com";
+import * as Yup from "yup";
 
 function Contact() {
   const [messageSent, setMessageSent] = useState(null);
+
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Name field required"),
+    email: Yup.string()
+      .email("Invalid email format")
+      .required("Email field required"),
+    subject: Yup.string().required("Subject field required"),
+    message: Yup.string()
+      .min(30, "Message should be atleast 30 characters")
+      .required("Message field required"),
+  });
 
   const formik = useFormik({
     initialValues: {
@@ -32,30 +44,7 @@ function Contact() {
       );
       formik.resetForm();
     },
-    validate: (values) => {
-      let errors = {};
-      if (!values.name) {
-        errors.name = "Name field required";
-      }
-      if (!values.email) {
-        errors.email = "Email field required";
-      } else if (
-        !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(values.email)
-      ) {
-        errors.email = "Invalid email format";
-      }
-
-      if (!values.subject) {
-        errors.subject = "Subject field required";
-      }
-      if (!values.message) {
-        errors.message = "Message field required";
-      } else if (values.message.length < 30) {
-        errors.message = "Message should be at least 30 characters long";
-      }
-
-      return errors;
-    },
+    validationSchema,
   });
 
   const serviceId = "service_997d53r";
