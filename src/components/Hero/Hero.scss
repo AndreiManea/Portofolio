@@ -118,7 +118,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px), (max-width: 1536px) {
   .hero {
     background-size: 65%;
     &__center {

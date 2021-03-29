@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px), (max-width: 1536px) {
   .experience {
     padding: 200px 0;
     &__title {
