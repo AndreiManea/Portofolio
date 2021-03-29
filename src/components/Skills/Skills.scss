@@ -29,6 +29,7 @@
 
 @media screen and (max-width: 1440px) {
   .skills {
+    height: auto;
     &__image {
       width: 650px;
       height: 650px;
@@ -66,6 +67,7 @@
 @media screen and (max-width: 1024px) {
   .skills {
     padding: 150px 50px 0 50px;
+    height: 80vh;
     &__image {
       width: 475px;
       height: 475px;
@@ -90,6 +92,7 @@
 
 @media screen and (max-width: 768px) {
   .skills {
+    height: auto;
     padding: 40px 0 0;
     flex-direction: column;
     align-items: center;

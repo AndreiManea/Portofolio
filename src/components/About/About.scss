@@ -96,6 +96,11 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .about{
+    height: auto;
+  }
+}
 @media screen and (max-width: 1366px) {
   .about {
     .container {

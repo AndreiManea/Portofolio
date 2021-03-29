@@ -23,8 +23,10 @@
 
 @media screen and (max-width: 1440px) {
   .experience {
+    padding: 200px 0;
     &__title {
       left: -85px;
+      top: 50%;
     }
   }
 }
@@ -44,6 +46,7 @@
 
 @media screen and (max-width: 1024px) {
   .experience {
+    padding: 100px 0;
     &__image {
       padding-top: 25px;
       height: 500px;
@@ -59,6 +62,7 @@
 
 @media screen and (max-width: 768px) {
   .experience {
+     padding: 0;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 90px;
