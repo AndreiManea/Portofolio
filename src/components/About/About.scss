@@ -83,7 +83,8 @@
           .MuiSvgIcon-root {
             margin-right: 5px;
           }
-          &:hover {
+          &:hover { 
+            cursor: pointer;
             color: #232323;
             background: #08fdd8;
           }
